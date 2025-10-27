@@ -76,7 +76,7 @@ body {
 /* ====== HERO ====== */
 .hero {
     height: 105vh;
-    background-image: url('img/banner.jpg'); 
+    background-image: url('img/Banner.jpg'); 
     background-position: center center; 
     background-repeat: no-repeat;
     background-size: cover; 
@@ -211,3 +211,4 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
