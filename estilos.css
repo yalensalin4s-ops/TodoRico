@@ -95,7 +95,7 @@ body {
 
 .btn-primario {
     display: inline-block;
-    background: var(--rosa);
+    background: #FFAA33;
     color: #fff;
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
@@ -211,6 +211,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
