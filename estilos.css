@@ -199,7 +199,8 @@ body {
   max-height: 420px;          
   border-radius: 8px;
   display: block;
-  object-fit: contain;       
+  object-fit: contain;    
+  margin: 0 auto;
 }
 
 /* --- Ajustes para Tablet --- */
@@ -270,6 +271,7 @@ section {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
