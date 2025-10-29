@@ -176,48 +176,64 @@ body {
     font-style: italic;
 }
 
-/* --- SECCIÓN DEL VIDEO (aislada y adaptable) --- */
+/* --- SECCIÓN DEL VIDEO (AISLADA) --- */
 #video {
   display: flex;
-  justify-content: center;     
-  align-items: center;         
-  flex-direction: column;
-  padding: 40px 0;             
-  background: black;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  background: #000;           /* fondo solo del contenedor del video */
   border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
   box-sizing: border-box;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 2;                  
+  position: relative;         /* relativo para poder usar z-index sin sacar el elemento del flujo */
+  z-index: 1;                 /* mantener bajo para no tapar otras decoraciones */
+  margin: 30px auto;
 }
 
-/* --- VIDEO RESPONSIVE --- */
+/* --- VIDEO RESPONSIVE con límite de altura en PC --- */
 .responsive-video {
-  width: 60%;                  
-  max-width: 700px;            
-  height: auto;
-  border-radius: 10px;
+  width: 60%;                 /* tamaño base en pantallas anchas */
+  max-width: 900px;           /* límite absoluto en anchura */
+  height: auto;               /* mantiene proporción según width o max-height */
+  max-height: 420px;          /* <-- limite que reduce la altura en PC */
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;        /* asegura que el video no se corte y mantenga proporción */
 }
 
-/* --- ADAPTACIÓN PARA TABLET --- */
+/* --- Ajustes para Tablet --- */
 @media (max-width: 1024px) {
   .responsive-video {
-    width: 80%;
-    max-width: 600px;
+    width: 85%;
+    max-width: 700px;
+    max-height: 380px;
   }
 }
 
-/* --- ADAPTACIÓN PARA CELULAR --- */
+/* --- Ajustes para Móvil --- */
 @media (max-width: 600px) {
   #video {
-    padding: 20px;
-    background: black;
+    padding: 18px 10px;
+    margin: 18px auto;
   }
-
   .responsive-video {
-    width: 100%;
+    width: 100%;              /* llena el ancho en móvil */
     max-width: 100%;
+    max-height: none;         /* deja que la altura fluya proporcionalmente en móviles */
   }
+}
+
+/* --- Si otra sección tiene 'decoración' (bordes, sombra, pseudo-elementos) y no se ve --- */
+/* Aseguramos que esa sección esté por encima si corresponde */
+.section-decorada {            /* reemplaza por la clase real de la sección que pierde su decoración */
+  position: relative;          /* importante para que los pseudo-elementos se muestren correctamente */
+  z-index: 2;                  /* mayor que #video para que su decoración aparezca encima */
+}
+
+/* --- Evitar reglas globales que rompan todo --- */
+section {                       /* si tienes esto global, cámbialo o acótalo; evita display:flex global */
+  /* no aplicar display:flex a todas las sections globalmente */
 }
 
 /* ====== CONTACTO ====== */
@@ -255,6 +271,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
