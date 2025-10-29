@@ -177,16 +177,16 @@ body {
 }
 
 /* --- VISIBILIDAD DEL VIDEO --- */
-#video, {
+#video {
   padding: 20px;
   align-items: center;
-  justifi-content: center;
+  justify-content: center;
   flex-direction: column;
   display: flex;
   visibility: visible;
   opacity: 1;
   max-width: 100%;
-  width: 100%
+  width: 100%;
   height: auto;
   min-height: 100vh;
   margin: 20px auto;
@@ -196,7 +196,7 @@ body {
   pointer-events: all;
   background: black;
   border-radius: 10px;
-  box-shadows: 0 4px 12px rgba(0,0,0,0,2);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   box-sizing: border-box;
 }
 
@@ -235,6 +235,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
