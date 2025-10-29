@@ -185,6 +185,8 @@ body {
   height: auto;
   margin: 20px auto;
   text-align: center;
+  z-index: 10;
+  position: relative;
 }
 
 /* ====== CONTACTO ====== */
@@ -222,6 +224,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
