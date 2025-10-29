@@ -176,6 +176,18 @@ body {
     font-style: italic;
 }
 
+/* ====== VIDEO ====== */
+/* --- VISIBILIDAD DEL VIDEO --- */
+#video, video {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  text-align: center;
+}
+
 /* ====== CONTACTO ====== */
 .contacto {
     padding: 4rem 2rem;
@@ -211,6 +223,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
