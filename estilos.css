@@ -181,12 +181,14 @@ body {
   padding: 20px;
   align-items: center;
   justifi-content: center;
+  flex-direction: column;
   display: flex;
   visibility: visible;
   opacity: 1;
-  max-width: 600px;
+  max-width: 100%;
   width: 100%
   height: auto;
+  min-height: 100vh;
   margin: 20px auto;
   text-align: center;
   z-index: 10;
@@ -233,6 +235,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
