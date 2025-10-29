@@ -195,6 +195,7 @@ body {
   background: black;
   border-radius: 10px;
   box-shadows: 0 4px 12px rgba(0,0,0,0,2);
+  box-sizing: border-box;
 }
 
 /* ====== CONTACTO ====== */
@@ -232,6 +233,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
