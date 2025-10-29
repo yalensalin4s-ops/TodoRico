@@ -189,6 +189,7 @@ body {
   position: relative;         
   z-index: 1;                 
   margin: 0 auto;
+  text-align: center;
 }
 
 /* --- VIDEO RESPONSIVE con límite de altura en PC --- */
@@ -271,6 +272,7 @@ section {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
