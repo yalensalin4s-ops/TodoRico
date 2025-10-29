@@ -185,7 +185,7 @@ body {
   visibility: visible;
   opacity: 1;
   max-width: 600px;
-  width: 90%
+  width: 100%
   height: auto;
   margin: 20px auto;
   text-align: center;
@@ -232,6 +232,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
