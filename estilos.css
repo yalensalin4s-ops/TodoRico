@@ -178,10 +178,13 @@ body {
 
 /* --- VISIBILIDAD DEL VIDEO --- */
 #video, {
+  padding: 20px;
+  align-items: center;
+  justifi-content: center;
   display: block;
   visibility: visible;
   opacity: 1;
-  max-width: 100%;
+  max-width: 640px;
   height: auto;
   margin: 20px auto;
   text-align: center;
@@ -189,6 +192,8 @@ body {
   position: relative;
   pointer-events: all;
   background: black;
+  border-radius: 10px;
+  box-shadows: 0 4px 12px rgba(0,0,0,0,2);
 }
 
 /* ====== CONTACTO ====== */
@@ -226,6 +231,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
