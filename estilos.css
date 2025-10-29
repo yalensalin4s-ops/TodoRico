@@ -176,7 +176,6 @@ body {
     font-style: italic;
 }
 
-/* ====== VIDEO ====== */
 /* --- VISIBILIDAD DEL VIDEO --- */
 #video, video {
   display: block;
@@ -223,6 +222,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
