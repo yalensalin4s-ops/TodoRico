@@ -185,6 +185,7 @@ body {
   padding: 20px;
   background: black;
   border-radius: 10px;
+  widht: 100%;+
   min-height: 100vh;
   box-sizing: border-box;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -256,6 +257,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
