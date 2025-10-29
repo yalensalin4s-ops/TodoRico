@@ -176,29 +176,50 @@ body {
     font-style: italic;
 }
 
-/* --- VISIBILIDAD DEL VIDEO --- */
+/* --- SECCIÓN DEL VIDEO --- */
 #video {
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   display: flex;
-  visibility: visible;
-  opacity: 1;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  margin: 20px auto;
-  text-align: center;
-  z-index: 10;
-  position: relative;
-  pointer-events: all;
+  justify-content: center;      
+  align-items: center;          
+  flex-direction: column;
+  padding: 20px;
   background: black;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  min-height: 100vh;
   box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
 }
+
+/* --- VIDEO RESPONSIVE --- */
+.responsive-video {
+  width: 80%;                   
+  max-width: 800px;             
+  height: auto;                 
+  border-radius: 10px;
+}
+
+/* --- ADAPTACIÓN PARA TABLET --- */
+@media (max-width: 1024px) {
+  .responsive-video {
+    width: 90%;
+    max-width: 700px;
+  }
+}
+
+/* --- ADAPTACIÓN PARA CELULAR --- */
+@media (max-width: 600px) {
+  #video {
+    min-height: auto;           
+    padding: 40px 10px;
+  }
+
+  .responsive-video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+  }
 
 /* ====== CONTACTO ====== */
 .contacto {
@@ -235,6 +256,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
 
 
 
